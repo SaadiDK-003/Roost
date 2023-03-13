@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+::after,
+::before {
+  text-decoration: none !important;
+  list-style: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #e9ecef;
+}
+body header {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  min-height: 824px;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header {
+    min-height: 500px;
+  }
+}
+body header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body header::after {
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body header .h-container {
+  min-height: 96px;
+  border-radius: 10px;
+  position: relative;
+}
+body header .h-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+body header .h-container .logo img {
+  width: 150px;
+  filter: invert(1);
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .h-container .logo img {
+    width: 120px;
+  }
+}
+body header .h-container .menu-section {
+  border-left: 2px solid #fff;
+  position: relative;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .h-container .menu-section {
+    padding-right: 40px;
+  }
+}
+body header .h-container .menu-section a {
+  text-decoration: none;
+  color: #fff;
+}
+body header .h-container .menu-section .hamburger {
+  position: absolute;
+  right: 5px;
+}
+body header .h-container .menu-section .top-menu a {
+  font-size: 14px;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .h-container .menu-section .main-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+  }
+  body header .h-container .menu-section .main-menu .close {
+    color: #000;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+  body header .h-container .menu-section .main-menu ul {
+    align-items: center;
+    padding-top: 50px;
+  }
+  body header .h-container .menu-section .main-menu ul li a {
+    color: #000;
+  }
+  body header .h-container .menu-section .main-menu.active {
+    transform: translateX(0);
+  }
+}
+body header .h-container .menu-section .main-menu > ul > li {
+  padding-block: 10px;
+}
+body header .h-container .menu-section .main-menu ul {
+  gap: 2.5rem;
+  margin-bottom: 0;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .h-container .menu-section .main-menu ul {
+    flex-direction: column;
+  }
+}
+body header .h-container .menu-section .main-menu ul li {
+  position: relative;
+}
+body header .h-container .menu-section .main-menu ul li a {
+  position: relative;
+  width: 500px;
+  font-size: 14px;
+}
+body header .h-container .menu-section .main-menu ul li a.dropdown-arrow::after {
+  content: "\f078";
+  margin-left: 6px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+body header .h-container .menu-section .main-menu ul li .dd-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 0 3px 1px #ddd;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  top: 40px;
+}
+body header .h-container .menu-section .main-menu ul li:hover .dd-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+body header .h-container .menu-section .main-menu ul li:hover .dd-menu li a {
+  color: #000;
+}
+body header .bg__content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+body header .bg__content .headings {
+  position: relative;
+  color: #fff;
+  max-width: 950px;
+  padding-top: 40px;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .bg__content .headings {
+    padding-top: 10px;
+  }
+}
+body header .bg__content .headings h1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-size: 300px;
+  mix-blend-mode: overlay;
+  white-space: nowrap;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .bg__content .headings h1 {
+    font-size: 65px;
+  }
+}
+body header .bg__content .headings h2 {
+  font-size: 100px;
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .bg__content .headings h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 360px) and (max-width: 599px) {
+  body header .bg__content .headings p {
+    font-size: 14px;
+    padding-inline: 10px;
+  }
+}
+body .marketing__container {
+  min-height: 398px;
+  width: 100%;
+  background-color: #fff;
+}
+body .marketing__container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+body .marketing__container .img {
+  border: 2px solid #004e7d;
+  overflow: hidden;
+}
+body .marketing__container .content p {
+  color: #6c757d;
+}
+body .marketing__container .content p span {
+  color: #000;
+  font-weight: 600;
+}
+body .marketing__container .content .links {
+  text-align: center;
+}
+body .marketing__container .content .links a {
+  display: inline-block;
+  color: #004e7d;
+}
+
+@media screen and (max-width: 786px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

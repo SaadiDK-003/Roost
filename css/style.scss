@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+::after,
+::before {
+  text-decoration: none !important;
+  list-style: none;
+}
+
+// General Classes
+
+.hide {
+  display: none !important;
+}
+.mobile {
+  display: none !important;
+}
+
+// Variables
+$body_bg: #e9ecef;
+$text-gray: #6c757d;
+$blue-color: #004e7d;
+
+// Responsive Design Mixin
+@import "responsive";
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: $body_bg;
+  header {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    min-height: 824px;
+    @include for-mobile-only {
+      min-height: 500px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: var(--bg-img);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &::after {
+      content: "";
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+    .h-container {
+      min-height: 96px;
+      border-radius: 10px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+      }
+
+      .logo {
+        img {
+          width: 150px;
+          @include for-mobile-only {
+            width: 120px;
+          }
+          filter: invert(1);
+        }
+      }
+      .menu-section {
+        border-left: 2px solid #fff;
+        @include for-mobile-only {
+          padding-right: 40px;
+        }
+        position: relative;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+        .hamburger {
+          position: absolute;
+          right: 5px;
+        }
+        .top-menu {
+          a {
+            font-size: 14px;
+          }
+        }
+        .main-menu {
+          @include for-mobile-only {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 2;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: all 0.5s ease;
+            .close {
+              color: #000;
+              position: absolute;
+              right: 25px;
+              top: 20px;
+            }
+            ul {
+              align-items: center;
+              padding-top: 50px;
+              li {
+                a {
+                  color: #000;
+                }
+              }
+            }
+            &.active {
+              transform: translateX(0);
+            }
+          }
+          > ul > li {
+            padding-block: 10px;
+          }
+          ul {
+            gap: 2.5rem;
+            margin-bottom: 0;
+            @include for-mobile-only {
+              flex-direction: column;
+            }
+            li {
+              position: relative;
+              a {
+                position: relative;
+                width: 500px;
+                font-size: 14px;
+                &.dropdown-arrow {
+                  &::after {
+                    content: "\f078";
+                    margin-left: 6px;
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                  }
+                }
+              }
+              .dd-menu {
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #fff;
+                z-index: 1;
+                box-shadow: 0 0 3px 1px #ddd;
+                transform: translateY(20px);
+                transition: all 0.5s ease;
+                top: 40px;
+              }
+              //   &.active {
+              //   }
+              &:hover {
+                .dd-menu {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateY(0);
+                  li {
+                    a {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bg {
+      &__content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        .headings {
+          position: relative;
+          color: #fff;
+          max-width: 950px;
+          padding-top: 40px;
+          @include for-mobile-only {
+            padding-top: 10px;
+          }
+          h1 {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            font-size: 300px;
+            @include for-mobile-only {
+              font-size: 65px;
+            }
+            mix-blend-mode: overlay;
+            white-space: nowrap;
+          }
+          h2 {
+            font-size: 100px;
+            @include for-mobile-only {
+              font-size: 50px;
+            }
+          }
+          p {
+            @include for-mobile-only {
+              font-size: 14px;
+              padding-inline: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Marketing Section
+  .marketing {
+    &__container {
+      min-height: 398px;
+      width: 100%;
+      background-color: #fff;
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+      .img {
+        border: 2px solid $blue-color;
+        overflow: hidden;
+      }
+      .content {
+        p {
+          color: $text-gray;
+          span {
+            color: #000;
+            font-weight: 600;
+          }
+        }
+        .links {
+          text-align: center;
+          a {
+            display: inline-block;
+            color: $blue-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
