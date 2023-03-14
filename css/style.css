@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 *,
 ::after,
 ::before {
@@ -217,6 +217,148 @@ body header .bg__content .headings h2 {
     padding-inline: 10px;
   }
 }
+body header.landing-page {
+  min-height: 952px;
+}
+body header.landing-page .h-container .menu-section::before {
+  position: absolute;
+  content: "";
+  height: 952px;
+  width: 2px;
+  background-color: #fff;
+  top: 0;
+  left: -2px;
+}
+body header.landing-page .content-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  min-height: 500px;
+  transform: translateY(-50%);
+}
+body header.landing-page .content-container .tab {
+  display: flex;
+}
+body header.landing-page .content-container .tab .left {
+  flex: 0 0 55%;
+}
+body header.landing-page .content-container .tab .left .content {
+  display: flex;
+  margin-left: 70px;
+  justify-content: flex-start;
+  height: 500px;
+  flex-direction: column;
+  gap: 40px;
+}
+body header.landing-page .content-container .tab .left .content .text {
+  color: #fff;
+}
+body header.landing-page .content-container .tab .left .content .text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+body header.landing-page .content-container .tab .left .content .text h2 span {
+  display: block;
+}
+body header.landing-page .content-container .tab .left .content .text p {
+  font-size: 24px;
+}
+body header.landing-page .content-container .tab .left .content .buttons a {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 32px;
+  display: inline-block;
+  margin-inline: 5px;
+  transition: all 0.3s ease;
+}
+body header.landing-page .content-container .tab .left .content .buttons a:hover {
+  background-color: #004e7d;
+  color: #fff;
+}
+body header.landing-page .content-container .tab .right {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  padding: 50px 80px 0;
+  margin-top: 40px;
+}
+body header.landing-page .content-container .tab .right h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+body header.landing-page .content-container .tab .right .content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body header.landing-page .content-container .tab .right .content h3 i {
+  margin-right: 10px;
+}
+body header.landing-page .content-container .tab .right .content p {
+  line-height: 32px;
+}
+body header.landing-page .content-container.landing-page-2.w-55 {
+  width: 55%;
+}
+body header.landing-page .content-container.landing-page-2 .tab .left {
+  flex: 0 0 100%;
+}
+body header.landing-page .tab_buttons {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  height: 96px;
+  width: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+body header.landing-page .tab_buttons a {
+  color: #000;
+  font-size: 24px;
+}
+body header.landing-page .tab_buttons.divider::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 2px;
+  background-color: #6c757d;
+  opacity: 0.2;
+}
+body header.landing-page .about-right {
+  position: absolute;
+  width: 45%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-40%);
+}
+body header.landing-page .about-right .right {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 40px 80px 0;
+  gap: 30px;
+}
+body header.landing-page .about-right .right h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+body header.landing-page .about-right .right .content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body header.landing-page .about-right .right .content h3 i {
+  margin-right: 10px;
+}
+body header.landing-page .about-right .right .content p {
+  line-height: 32px;
+}
 body .marketing__container {
   min-height: 398px;
   width: 100%;
@@ -244,6 +386,23 @@ body .marketing__container .content .links {
 body .marketing__container .content .links a {
   display: inline-block;
   color: #004e7d;
+}
+
+.owl-nav {
+  position: absolute;
+  bottom: -230px;
+  left: 80px;
+  height: 96px;
+  width: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.owl-nav button {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 786px) {

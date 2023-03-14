@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mission & Vision</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* custom work here start ~ Article Details */
+      .justify-text {
+        text-align: justify;
+      }
+
+      .pt-6 {
+        padding-top: 4rem !important;
+      }
+      .pt-7 {
+        padding-top: 5rem !important;
+      }
+      .pt-8 {
+        padding-top: 6rem !important;
+      }
+
+      .absolute-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .cursor-pointer::before {
+        content: "";
+        position: absolute;
+        inset: 30px 0 0;
+        background-color: #004e7d;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        z-index: -1;
+      }
+      .cursor-pointer::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        border-radius: 50%;
+        height: 20%;
+        filter: blur(256px);
+        background-color: #004e7d;
+        left: 50%;
+        opacity: 0.4;
+        transform: translateX(-50%);
+      }
+
+      .play-btn {
+        width: 112px;
+        height: 112px;
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+      }
+
+      .title {
+        bottom: 30px;
+        left: 80px;
+        color: #fff;
+      }
+      .title h3 {
+        font-size: 36px;
+      }
+
+      .more-from-category h3 {
+        font-size: 48px;
+      }
+
+      .more-from-category .columns-3 .content span {
+        color: #004e7d;
+      }
+      .more-from-category .columns-3 .content p {
+        padding-right: 20px;
+      }
+      .btn {
+        padding-block: 12px !important;
+      }
+
+      .btn.bg-light-blue {
+        background: rgba(0, 78, 125, 0.1);
+        color: #004e7d;
+      }
+      .btn.bg-light-gray {
+        background: #e9ecef;
+        color: #6c757d;
+      }
+      @media screen and (max-width: 599px) {
+        .play-btn {
+          width: 80px;
+          height: 80px;
+        }
+        .title h3 {
+          font-size: 20px;
+        }
+      }
+      /* custom work here end ~ Article Details */
+    </style>
+  </head>
+  <body>
+    <div class="position-relative rounded-5 overflow-hidden">
+      <header class="site-header position-absolute top-0 start-0 w-100">
+        <div class="d-flex flex-row">
+          <div
+            class="px-4 py-2 flex-grow-1 border-bottom d-flex align-items-center"
+          >
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logo.png" alt="" width="116px" />
+            </a>
+          </div>
+          <div class="p-0 border-start border-bottom text-uppercase">
+            <div class="d-flex flex-column">
+              <div class="px-4 py-2 border-bottom hide-small">
+                <ul class="navbar-nav flex-row justify-content-end text-white">
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Research</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#">Press Room</a>
+                  </li>
+                  <li class="nav-item ps-4">
+                    <a class="nav-link" href="#">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.66683 14.4999C3.90016 14.4999 0.833496 11.4333 0.833496 7.66659C0.833496 3.89992 3.90016 0.833252 7.66683 0.833252C11.4335 0.833252 14.5002 3.89992 14.5002 7.66659C14.5002 11.4333 11.4335 14.4999 7.66683 14.4999ZM7.66683 1.83325C4.44683 1.83325 1.8335 4.45325 1.8335 7.66659C1.8335 10.8799 4.44683 13.4999 7.66683 13.4999C10.8868 13.4999 13.5002 10.8799 13.5002 7.66659C13.5002 4.45325 10.8868 1.83325 7.66683 1.83325Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M14.6666 15.1666C14.54 15.1666 14.4133 15.12 14.3133 15.02L12.98 13.6866C12.7866 13.4933 12.7866 13.1733 12.98 12.98C13.1733 12.7866 13.4933 12.7866 13.6866 12.98L15.02 14.3133C15.2133 14.5066 15.2133 14.8266 15.02 15.02C14.92 15.12 14.7933 15.1666 14.6666 15.1666Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-4 py-2 navbar" id="navbar">
+                <i class="bi mobile-nav-toggle bi-list"></i>
+                <ul class="navbar-nav flex-row justify-content-end text-white">
+                  <li class="nav-item dropdown px-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Regions
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Programs
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown px-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown ps-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      News & Events
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section
+        class="d-flex align-items-end min-vh-100 position-relative pt-5 pb-5 hero"
+        style="
+          background-image: url('assets/img/mission-and-vision-hero.jpg');
+          background-size: cover;
+        "
+      >
+        <div class="container">
+          <div class="d-flex flex-column text-center text-white pb-5">
+            <h1 class="stroke-text">Mission & Vision</h1>
+            <h2 class="page-title">Mission & Vision</h2>
+            <div class="mt-5">
+              <p class="fs-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main id="main" class="page-content">
+      <section class="user-sec">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="user d-flex col-12 col-lg-6 gap-4 align-items-center">
+              <img src="Ellipse.png" alt="user-1" />
+              <div class="info">
+                <h4 class="fw-medium">Paul Elliott</h4>
+                <span class="opacity-50">Author</span>
+              </div>
+            </div>
+            <div
+              class="buttons d-lg-flex mt-3 mt-md-0 gap-3 col-12 col-lg-6 align-items-center justify-content-lg-end"
+            >
+              <a href="#!" class="btn mb-2 mb-md-0 fw-medium bg-light-blue"
+                >Category Name</a
+              >
+              <a href="#!" class="btn mb-2 mb-md-0 fw-medium bg-light-gray"
+                >Tag Name</a
+              >
+              <a href="#!" class="btn mb-2 mb-md-0 fw-medium bg-light-gray"
+                >Tag Name</a
+              >
+            </div>
+          </div>
+          <hr />
+          <div class="row mt-5">
+            <p class="lh-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
+              auctor ornare leo, non suscipit magna interdum eu. Curabitur
+              pellentesque nibh nibh, at maximus ante fermentum sit amet.
+              Pellentesque commodo lacus at sodales sodales. Quisque sagittis
+              orci ut diam condimentum, vel euismod erat placerat. In iaculis
+              arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Ut et massa mi.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 two-img-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="article_box">
+                <img src="article_.png" class="w-100" alt="article_" />
+                <h5 class="my-3">Image Source - ROOST Media Library</h5>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  massa mi. Aliquam in hendrerit urna.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="article_box">
+                <img src="article_2.png" class="w-100" alt="article_" />
+                <h5 class="my-3">Image Source - ROOST Media Library</h5>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  massa mi. Aliquam in hendrerit urna.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <p class="justify-text">
+              Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+              mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
+              tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo,
+              non suscipit magna interdum eu. Curabitur pellentesque nibh nibh,
+              at maximus ante fermentum sit amet. Pellentesque commodo lacus at
+              sodales sodales. Quisque sagittis orci ut diam condimentum, vel
+              euismod erat placerat. In iaculis arcu eros, eget tempus orci
+              facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit
+              amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+              Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+              Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+              Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
+              amet. Pellentesque commodo lacus at sodales sodales. Quisque
+              sagittis orci ut diam condimentum, vel euismod erat placerat.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="article_box">
+                <img src="article_.png" class="w-100" alt="article_" />
+                <h5 class="my-3">Image Source - ROOST Media Library</h5>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  massa mi. Aliquam in hendrerit urna.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="article_box">
+                <img src="article_2.png" class="w-100" alt="article_" />
+                <h5 class="my-3">Image Source - ROOST Media Library</h5>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                  massa mi. Aliquam in hendrerit urna.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <p class="justify-text">
+              In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+              Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+              mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
+              tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo,
+              non suscipit magna interdum eu. Curabitur pellentesque nibh nibh,
+              at maximus ante fermentum sit amet. Pellentesque commodo lacus at
+              sodales sodales. Quisque sagittis orci ut diam condimentum, vel
+              euismod erat placerat. In iaculis arcu eros, eget tempus orci
+              facilisis id.
+            </p>
+            <div
+              class="buttons mt-5 d-md-flex text-center gap-3 col-12 col-lg-6 align-items-center justify-content-lg-start"
+            >
+              <a href="#!" class="btn fw-medium text-nowrap mb-3 mb-lg-0"
+                >Download Resource A</a
+              >
+              <a href="#!" class="btn fw-medium text-nowrap mb-3 mb-lg-0"
+                >Download Resource B</a
+              >
+              <a href="#!" class="btn fw-medium text-nowrap mb-3 mb-lg-0"
+                >Download Resource C</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-7 bg-video-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 cursor-pointer px-4 position-relative">
+              <img src="video_bg.png" alt="bg_img" class="w-100" />
+              <div
+                class="play-btn d-flex align-items-center justify-content-center position-absolute absolute-center"
+              >
+                <img src="play-cricle.png" alt="play-circle" />
+              </div>
+              <div class="title position-absolute">
+                <h3 class="fw-medium">Now Playing - Video Title</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more-category-sec">
+        <div class="container more-from-category">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="fw-medium">More From This Category</h3>
+              <p class="mt-3 lh-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
+                sapien fringilla, mattis ligula consectetur, ultrices mauris.
+              </p>
+            </div>
+          </div>
+          <div class="row columns-3">
+            <!-- box-1 -->
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="box bg-white py-1 px-2 rounded-4 overflow-hidden">
+                <img
+                  src="from-category.png"
+                  class="w-100"
+                  alt="from-category"
+                />
+                <div class="buttons my-4 d-flex align-items-center gap-3">
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                </div>
+                <div class="content">
+                  <h4 class="fw-medium mt-3">Released Jan 30 2023</h4>
+                  <span class="my-2">Published 1 Feb 2023</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et massa mi.
+                  </p>
+                </div>
+                <div class="btn-center my-4">
+                  <a href="#!" class="btn w-100 px-4">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- box-2 -->
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="box bg-white py-1 px-2 rounded-4 overflow-hidden">
+                <img
+                  src="from-category.png"
+                  class="w-100"
+                  alt="from-category"
+                />
+                <div class="buttons my-4 d-flex align-items-center gap-3">
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                </div>
+                <div class="content">
+                  <h4 class="fw-medium mt-3">Released Jan 30 2023</h4>
+                  <span class="my-2">Published 1 Feb 2023</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et massa mi.
+                  </p>
+                </div>
+                <div class="btn-center my-4">
+                  <a href="#!" class="btn w-100 px-4">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- box-3 -->
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="box bg-white py-1 px-2 rounded-4 overflow-hidden">
+                <img
+                  src="from-category.png"
+                  class="w-100"
+                  alt="from-category"
+                />
+                <div class="buttons my-4 d-flex align-items-center gap-3">
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                </div>
+                <div class="content">
+                  <h4 class="fw-medium mt-3">Released Jan 30 2023</h4>
+                  <span class="my-2">Published 1 Feb 2023</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et massa mi.
+                  </p>
+                </div>
+                <div class="btn-center my-4">
+                  <a href="#!" class="btn w-100 px-4">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- box-4 -->
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="box bg-white py-1 px-2 rounded-4 overflow-hidden">
+                <img
+                  src="from-category.png"
+                  class="w-100"
+                  alt="from-category"
+                />
+                <div class="buttons my-4 d-flex align-items-center gap-3">
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                  <a href="#!" class="btn bg-light-gray">Tag Name</a>
+                </div>
+                <div class="content">
+                  <h4 class="fw-medium mt-3">Released Jan 30 2023</h4>
+                  <span class="my-2">Published 1 Feb 2023</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    et massa mi.
+                  </p>
+                </div>
+                <div class="btn-center my-4">
+                  <a href="#!" class="btn w-100 px-4">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+              <a href="index.html"
+                ><img src="assets/img/footer-logo.png" alt="" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-lg-12 col-md-12 footer-links">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Regions</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Press Room</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid gx-0">
+        <div class="copyright">
+          <div class="row gx-0">
+            <div class="col-lg-7 col-md-7">
+              <div class="left-footer">
+                <ul>
+                  <li>© 2023 Oregon Tourism Commission</li>
+                  <li>2608 Main St, Lake Placid, NY 12946</li>
+                  <li>info@roostadk.com</li>
+                  <li>518-523-2445</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <div class="social-links">
+                <a href="#" class="twitter"
+                  ><img src="assets/img/facebook.svg" alt="" class="img-fluid"
+                /></a>
+                <a href="#" class="facebook"
+                  ><img src="assets/img/insta.svg" alt="" class="img-fluid"
+                /></a>
+                <a href="#" class="instagram"
+                  ><img src="assets/img/twiter.svg" alt="" class="img-fluid"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
